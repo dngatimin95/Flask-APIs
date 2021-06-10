@@ -13,9 +13,6 @@ class UserModel(db.Model):
     age = db.Column(db.Integer, nullable=False)
     gender = db.Column(db.Boolean, nullable=False)
 
-    def __repr__(self):
-        return f"Users(name={name}, age={age}, gender={gender})"
-
 db.create_all() #delete after running once
 
 user_args = reqparse.RequestParser()
